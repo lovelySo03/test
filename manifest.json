@@ -1,0 +1,13 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "RibbonDrawing",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "RibbonDrawing",
+  "start_url": "https://bayleaf07.pe.kr/draw/",
+  "theme_color": "#ffffff",
+  "id": "RibbonDrawing",
+  "lang": "ko"
+}

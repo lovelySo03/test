@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+canvas {
+    background-color: #ffffff;
+    cursor: crosshair; /* 커서 모양 설정 */
+}
+
+.colorButton {
+    width: 10vw; /* 버튼의 너비를 뷰포트 너비의 10%로 설정 */
+    height: 4vh; /* 버튼의 높이를 뷰포트 높이의 4%로 설정 */
+    border: none;
+    cursor: pointer;
+    margin-right: 2vw; /* 오른쪽 여백을 뷰포트 너비의 2%로 설정 */
+    margin-bottom: 2vh; /* 아래쪽 여백을 뷰포트 높이의 2%로 설정 */
+}
+
+#controls {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#drawArea {
+    position: absolute;
+    top: 40px; /* 컨트롤 버튼의 높이만큼 띄움 */
+    left: 0;
+    width: 100%;
+    height: calc(100% - 40px); /* 컨트롤 버튼의 높이만큼 제외 */
+    background-color: white; /* 캔버스의 배경색 설정 */
+}
+
+#drawArea {
+    /* 이전 스타일 유지 */
+    cursor: none; /* 커서 모양 숨기기 */
+}
+
+/* 768px 이상의 화면에 대한 미디어 쿼리 */
+@media screen and (min-width: 768px) {
+    #controls {
+        top: 20px;
+        left: 20px;
+    }
+}
+
+/* 1024px 이상의 화면에 대한 미디어 쿼리 */
+@media screen and (min-width: 1024px) {
+    #controls {
+        top: 30px;
+        left: 30px;
+    }
+}

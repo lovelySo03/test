@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 그림판</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="color" id="colorPicker">
+    <button id="eraserButton">지우개</button>
+    <button id="undoButton">되돌리기</button>
+    <div id="colorButtons">
+        <button class="colorButton" data-color="#ff0000" style="background-color: #ff0000;"></button>
+        <button class="colorButton" data-color="#198819" style="background-color: #198819;"></button>
+        <button class="colorButton" data-color="#0000ff" style="background-color: #0000ff;"></button>
+        <button class="colorButton" data-color="#ffa500" style="background-color: #ffa500;"></button>
+        <button class="colorButton" data-color="#a52a2a" style="background-color: #a52a2a;"></button>
+        <button class="colorButton" data-color="#000000" style="background-color: #000000;"></button>
+    </div>
+
+    <input type="number" id="lineWidthInput" value="5" style="display: none;">
+    <div id="colorOptions"></div>
+    <canvas id="drawArea"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
